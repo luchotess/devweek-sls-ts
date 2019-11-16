@@ -1,0 +1,36 @@
+functions:
+  getUser:
+    description: Get one user
+    handler: src/users/controller.getUsersFunction
+    events:
+      - http:
+          path: users
+          method: get
+          cors: true
+
+  createUser:
+    description: Create one user
+    handler: src/users/controller.createUsersFunction
+    events:
+      - http:
+          path: users
+          method: post
+          cors: true
+
+  updateUser:
+    description: Update one user
+    handler: src/users/controller.updateUsersFunction
+    events:
+      - http:
+          path: users/{id}
+          method: put
+          cors: true
+
+  deleteUser:
+    description: Delete one user
+    handler: src/users/controller.deleteUsersFunction
+    events:
+      - http:
+          path: users/{id}
+          method: delete
+          cors: true
