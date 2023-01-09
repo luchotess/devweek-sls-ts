@@ -30,7 +30,7 @@
     "typescript": "^3.6.4",
     "serverless": "1.52.2",
     "serverless-domain-manager": "3.3.0",
-    "serverless-offline": "5.11.0",
+    "serverless-offline": "12.0.4",
     "serverless-prune-plugin": "1.4.1",
     "@types/aws-lambda": "^8.10.31",
     "@types/node": "^8.9.5"
